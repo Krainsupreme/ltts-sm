@@ -1,0 +1,22 @@
+# Add/remove "#" from the php lines below to turn the PHP command on/off.
+# The commands may not work for all hosts. Check with your hosting support.
+
+# 1. Misc settings for resources and file upload sizes.
+# php_flag display_errors on
+# php_flag magic_quotes_gpc off
+# php_value post_max_size 128M
+# php_value memory_limit 128M
+# php_value upload_max_filesize 128M
+# php_value max_execution_time 600
+# php_value session.gc_probability 1
+# php_value session.gc_divisor 100
+# php_value session.gc_maxlifetime 43200
+# php_value session.bug_compat_warn off
+
+# 2. Block unwanted "=http://" or "=ftp://" requests to make your site more secure.
+# RewriteEngine on
+# RewriteCond %{QUERY_STRING} ^.*=(ht|f)tp\://.*$ [NC]
+# RewriteRule .* - [F,L]
+
+# 3. Set the default charset (e.g. iso-8859-1, utf-8) for PHP.
+# php_value default_charset utf-8
